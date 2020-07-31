@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #0048cd !important;
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    top: 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/*.sticky + .content {
+    padding-top: 60px;
+  }*/
+.nav-link {
+    color: white !important;
+}
+.subscribe-btn {
+    color: black !important;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img.profile{
+    display: block;
+    margin-left: 42%;
+    margin-right: 50%;
+}
+#user{
+    margin-top: 20px;
+    display: block;
+    margin-left: 43%;
+    margin-right: 50%;
+}
+
+#info{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#right{
+    background-color: #0048cd;
+}
+
+.content{
+    margin-top: 92px;
+}
+.divide{
+    margin-top: 30px;
+}
+
+.programs-card {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-in;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition: transform .5s ease;
+}
+.programs-card:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+#programs{
+    margin-top: 50px;
+}
