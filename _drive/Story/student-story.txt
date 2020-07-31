@@ -1,0 +1,33 @@
+Student story.
+
+Unregistered Student:
+
+	As an unregistered student, when I open the application, I should see 
+registration button. When I click on that button, I should see a form with 5 mandatory inputs and a button beneath inputs. Inputs sohould be first name, last name, email, password and password confirmation.
+When I fill that form and click button I should be redirected to a page with a text “You’ve been successfully registered”. 
+
+
+Registered student:
+
+    As a registered student, when i open the app, i see the log in button. And when i click it, i should see a form with two inputs and the submit button.
+Inputs are email and password. When i fill that form and submit it i should enter my accound.
+
+
+When student in his account:
+
+    1. When im already in my account, I can see my lessons, taks and other content.
+Also i see the "My cabinet button". When i click it, i can see my marks, my groups, my done tasks and statistics of my subjects.
+
+    2. When i enter the lesson by clicking the preview, i can see some other students, teacher and the panel on left side (or other sides). I see 5 buttons there.
+Buttons are "Ask question", "Use the Board", "Open the micraphone", "Open the camera" and "Leave the lesson". When i click "Ask question" button i send request to the teacher and if the teacher commits it, i ask my question and get the answer.
+When i click "Use the Board" button i send request to teacherfor using the Board. If teacher commits it i can use the Board. When i click "Open the micraphone", "Open the camera" and "Leave the lesson" buttons i can pen the micraphone and talk, open my camera and leave the lesson.
+When im in the lesson i get the notifications every 10mins asking me "Are still you here?". And i commit them by clicking the commit button. If i dont commit it in 2mins they dissapear.
+
+    3. When i enter the exam by clicking the preview, i see same thing as the lesson but the panel on the left has the test instead of these buttons. And the "Leave" button is still there.
+I see the test names, descriptions and durations. I click one of those tests and i see the question and variants. I can chosee on variant and submit it. When im done with the tests i can leave the exam by clicking the "Leave" button.
+
+    4. In the main page i can see my active tasks. When i click on the task i can see the question of that task and place to add the file with the answer. I add my file to that place by drag and dropping it or just from finder and submit it with submit button.
+After submiting i get the result is my answer right or not.
+
+    5. In the main page i can see icon with my downloaded books and videos. I can see them by clicking that button and use them.
+They dissapear after some time.
