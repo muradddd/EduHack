@@ -1,0 +1,8 @@
+{% for category, message in messages %}
+<div class="alert alert-{{category}}", role="alert">   <!--category-ni sen app.py da vereceksen/ Misal success(yasil), danger(qirmizi) ve.s-->
+{{ message }}
+</div>
+{% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
