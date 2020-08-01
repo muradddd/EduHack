@@ -85,7 +85,7 @@ body {
 .programs-card-three {
     color: black;
     background-color: white;
-    border: 1px solid #E6E6E6;
+    border: transparent;
     border-radius: 10px;
     height: 120px;
     display: -webkit-box;
