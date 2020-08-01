@@ -1,10 +1,18 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: 'EB Garamond', serif;
+}
+p {
+    font-size: 20px;
+}
 .navbar {
-    background-color: #0048cd !important;
+    background-color: #061A40 !important;
     position: fixed;
+    border-bottom: 1px solid black;
     width: 100%;
+    height: 92px;
     z-index:1;
     top: 0;
 }
@@ -25,25 +33,14 @@ html {
     border-radius: 5px;
     padding: 10px;
 }
-
-img.profile{
-    display: block;
-    margin-left: 42%;
-    margin-right: 50%;
-}
 #user{
     margin-top: 20px;
     display: block;
-    margin-left: 43%;
-    margin-right: 50%;
 }
 
-#info{
-    margin-left: 30px;
-    margin-top: 30px;
-}
 #right{
-    background-color: #0048cd;
+    background-image: linear-gradient(#0c234e, #061A40);
+    /* background-color: #0c234e; */
 }
 
 .content{
@@ -54,13 +51,15 @@ img.profile{
 }
 
 .programs-card {
-    border: 1px solid #E6E6E6;
+    color: white;
+    background-color: #061A40;
+    /* border: 1px solid #E6E6E6; */
     border-radius: 5px;
     height: 290px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0.9;
+    opacity: 1;
     transition: opacity 0.2s ease-in;
     transition-property: opacity;
     transition-duration: 0.2s;
@@ -72,13 +71,59 @@ img.profile{
     opacity: 1;
     transform: scale(1.03);
 }
+.programs-card-three {
+    color: black;
+    background-color: #E8E8E8;
+    /* border: transparent; */
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    height: 120px;
+    display: -webkit-box;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition: transform .5s ease;
+}
+.task-time {
+    padding-top: 35px;
+    font-size: 19px;
+}
+.task-names {
+    padding: 30px;
+}
+#s{
+    margin-left: 80px;
+}
+#ss{
+    margin-left: 260px;
+}
+#sss{
+    margin-left: 155px;
+}
+#ssss{
+    margin-left: 170px;
+}
+#sssss{
+    margin-left: 300px;
+}
 
 #programs{
     margin-top: 50px;
 }
 
+.programs-header {
+    margin-left: 20px;
+}
+
 .final-container {
     background-color: #061A40;
+    width: 100%;
+    padding: 0;
     /* border-bottom: 1px solid #E6E6E6 !important; */
 }
 .footer-logo {
@@ -95,4 +140,21 @@ img.profile{
     color: rgb(108, 108, 108);
     font-size: 13px;
     margin-bottom: 0;
+}
+
+.second {
+    border-bottom: 1px solid #e6e6e6;
+}
+.group {
+    border-top: 1px solid #e6e6e6;
+}
+.logo {
+    width: 90px;
+}
+.status {
+    margin-top: ;
+    font-size: 15px;
+}
+.svg {
+    color: white !important;
 }
