@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="{{ url_for('static', filename='images/mini-logo.png') }}">
+
 
     <title>EduHack - {% block title %} My page {% endblock %}</title>
 
@@ -28,13 +30,15 @@
 
 <body>
 
+    {% block navbar %}
     {% include 'includes/navbar.html' %}
+    {% endblock %}
 
     <div class="container">
-        
+
         <div class="row">
 
-          {% include 'includes/message.html' %}
+            {% include 'includes/message.html' %}
 
         </div>
     </div>

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %} Registration {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="first">
+                <img class="profile" src="img/profile-photo.webp"
+                    style="border-radius: 50%; width: 200px; height: 200px;">
+
+            </div>
+            <div class="second" id="user">
+                <h3 class="username">Username</h3>
+                <img src="img/icons8-green-circle-48.png" style="width: 22px; height: 22px;">
+                <p class="status" style="display: inline;">Online</p>
+
+            </div>
+            <div class="third" id="info">
+                <h3 class="email">Email</h3>
+
+                <a href="#profile">kenan@example.com</a>
+            </div>
+            <div class="lesson" id="programs">
+                <h2 class="programs-header pb-3">Dersler</h2>
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-3 col-lg-3 mb-4 mb-lg-0">
+                            <div class="programs-card">
+                                <h3 class="programs-h4">Birinci ders</h3>
+                                <!-- <h4 class="f-c-price">3000₼</h4> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 col-lg-3 mb-4 mb-lg-0">
+                            <div class="programs-card" id="s">
+                                <h3 class="programs-h4">İkinci ders</h3>
+                                <!-- <h4 class="f-c-price mt-1">2000₼</h4> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 col-lg-3 mb-4 mb-lg-0">
+                            <div class="programs-card" id="s">
+                                <h3 class="programs-h4">Üçuncü ders</h3>
+                                <!-- <h4 class="f-c-price mt-1">1000₼</h4> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 col-lg-3 mb-4 mb-lg-0">
+                            <div class="programs-card" id="s">
+                                <h3 class="programs-h4">Dorduncu ders</h3>
+                                <!-- <h4 class="f-c-price mt-1">1000₼</h4> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group" id="programs">
+                <h2 class="programs-header pb-3">Qruplar</h2>
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-3 col-lg-3 mb-4 mb-lg-0">
+                            <div class="programs-card">
+                                <h3 class="programs-h4">Qrup 1</h3>
+                                <!-- <h4 class="f-c-price">3000₼</h4> -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 col-lg-3 mb-4 mb-lg-0">
+                            <div class="programs-card" id="s">
+                                <h3 class="programs-h4">Qrup 2</h3>
+                                <!-- <h4 class="f-c-price mt-1">2000₼</h4> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="final-container text-center">
+                <div class="col-12">
+                    <img src="img/logo.png" alt="" class="footer-logo mt-3 mb-3">
+                </div>
+            </div>
+            <div class="final-container text-center">
+                <div class="col-12">
+                    <p class="footer-header">E-Education.</p>
+                    <p class="copyright">Copyright © E-Education. Privacy Policy.</p>
+                    <p class="copyright-two">All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2" id="right">
+            <div class="divide">
+                <img src="img/icons8-circle-24.png">
+                <a href="profile.html" style="color: whitesmoke;">Profil</a>
+                <br />
+            </div>
+            <div class="divide">
+                <img src="img/icons8-circle-24.png">
+                <a href="cabinet-absence.html" style="color: whitesmoke;">Davamiyyet</a>
+                <br />
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
