@@ -12,6 +12,7 @@ def load_user(user_id):
 
 
 class User(db.Model, UserMixin):
+    # information
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(40), unique=True ,nullable=False)
     first_name = db.Column(db.String(40), nullable=False)
@@ -21,6 +22,9 @@ class User(db.Model, UserMixin):
     is_active = db.Column(db.Boolean(), default=True, nullable=False)
     is_superuser = db.Column(db.Boolean(), default=False, nullable=False)
     date_joined = db.Column(db.DateTime(timezone=True), server_default=func.now())
+
+    # relations
+    groups = db.relationship('Group', backref='user', lazy=True)
 
     def __init__(self, email, first_name, last_name, password):
         self.email = email
