@@ -44,17 +44,14 @@
         </div>
     </div>
     <!-- Page Content -->
-    <div class="container">
+   
+     {% block content %}
 
-        <div class="row">
-            {% block content %}
+     {% endblock %}
 
-            {% endblock %}
+     {% include 'includes/sidebar.html' %}
 
-            {% include 'includes/sidebar.html' %}
-
-        </div>
-    </div>
+      
 
     {% include 'includes/footer.html' %}
 
