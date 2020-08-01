@@ -13,7 +13,6 @@ def register():
         db.session.add(user)
         db.session.commit()
         flash('User created')
-        print('useer createddd')
         return redirect('/')
     context = {
         'form': form
@@ -25,13 +24,12 @@ def register():
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     form = LogInForm()
-    next_page = request.args.get('next', '/')
     if request.method == 'POST' and form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user and user.check_password(form.password.data):
             login_user(user)
             flash('Logged in successfully.')
-            return redirect(next_page)
+            return redirect('profile')
         else:
             flash('User not found')
     context = {
