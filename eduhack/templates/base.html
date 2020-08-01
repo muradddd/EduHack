@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="{{ url_for('static', filename='images/mini-logo.png') }}">
+
 
     <title>EduHack - {% block title %} My page {% endblock %}</title>
 
@@ -19,7 +21,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Custom styles for all templates -->
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
 
     {% block css %}
 
@@ -28,21 +30,15 @@
 
 <body>
 
+    {% block navbar %}
     {% include 'includes/navbar.html' %}
+    {% endblock %}
 
     <div class="container">
+
         <div class="row">
 
-            {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            <ul class=flashes>
-                {% for message in messages %}
-                <li style="color:green">{{ message }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-            {% endwith %}
-
+            {% include 'includes/message.html' %}
 
         </div>
     </div>

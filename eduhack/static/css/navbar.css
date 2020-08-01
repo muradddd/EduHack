@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #061A40 !important;
+    position: fixed;
+    font-size: 18px;
+    width: 100%;
+    height: 90px;
+    z-index:1;
+    top: 0;
+    
+}
+.nav-link {
+    color: white !important;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
+.subscribe-btn {
+    color: black !important;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.logo {
+    width: 90px;
+}
