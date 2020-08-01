@@ -29,7 +29,7 @@ def login():
         if user and user.check_password(form.password.data):
             login_user(user)
             flash('Logged in successfully.')
-            return redirect('profile')
+            return redirect('/dashboard')
         else:
             flash('User not found')
     context = {

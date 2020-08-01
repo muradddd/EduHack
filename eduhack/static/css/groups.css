@@ -1,0 +1,38 @@
+.group-search {}
+
+.btn-black {
+    background-color: #061A40 !important;
+    color: #fff !important;
+    outline: none !important;
+    border-radius: 5px !important;
+    padding: 0 15px;
+}
+
+.form-control {
+    color: black;
+    background: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+    outline: none !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+table thead th {
+    background: #59677e;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color .1s;
+}
+
+tbody tr {
+    border-bottom: 0.07143rem solid #f4f4f4;
+}

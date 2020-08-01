@@ -10,7 +10,7 @@
     <link rel="icon" href="{{ url_for('static', filename='images/mini-logo.png') }}">
 
 
-    <title>EduHack - {% block title %}  {% endblock %}</title>
+    <title>EduHack - {% block title %} {% endblock %}</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
@@ -29,13 +29,13 @@
     {% endblock %}
 </head>
 
-<body>
+<body style="font-family: 'EB Garamond', serif;">
 
     {% block navbar %}
     {% include 'includes/navbar.html' %}
     {% endblock %}
 
-    <div class="container">
+    <div class="container" style="margin-top: 90px;">
 
         <div class="row">
 
@@ -44,16 +44,17 @@
         </div>
     </div>
     <!-- Page Content -->
-   
-     {% block content %}
 
-     {% endblock %}
+    {% block content %}
 
-     {% include 'includes/sidebar.html' %}
+    {% endblock %}
 
-      
+    {% include 'includes/sidebar.html' %}
 
+
+    {% block footer %}
     {% include 'includes/footer.html' %}
+    {% endblock %}
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

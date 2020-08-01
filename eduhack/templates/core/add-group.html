@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %} Add Group {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/add-group.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="col-sm-12">
+        <div class="add-group-form">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="">Qrupun adı</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Tələbələr</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Sinif rəhbəri</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Tədris dili</label>
+                    <input type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-black">Əlavə et</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

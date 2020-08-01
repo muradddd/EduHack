@@ -13,3 +13,17 @@ def teacher_main():
 @core.route('/teacher/lesson', methods=['GET','POST'])
 def teacher_main():
     return render_template('core/teacher_lesson.html')
+
+@core.route('/dashboard', methods=['GET',])
+def dashboard():
+    return render_template('core/dashboard.html')
+
+
+@core.route('/groups', methods=['GET', 'POST',])
+def groups():
+    return render_template('core/groups.html')
+
+
+@core.route('/add-group', methods=['GET', 'POST',])
+def add_group():
+    return render_template('core/add-group.html')

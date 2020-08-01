@@ -1,0 +1,22 @@
+.btn-black {
+    background-color: #061A40 !important;
+    color: #fff;
+    outline: none !important;
+}
+
+.form-control {
+    color: black;
+    background: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+    outline: none !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+.add-group-form {
+    margin: 60px 0;
+}

@@ -1,0 +1,23 @@
+.plus_image {
+	width: 25px;
+	height: 25px;
+}
+
+.row {
+	margin: 30px 0;
+}
+
+.card {
+	min-height: 250px;
+}
+
+.card-title,
+.card-text {
+	padding: 5px;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: black;
+}

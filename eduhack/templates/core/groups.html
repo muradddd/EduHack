@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block title %} Add Group {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/groups.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="col-sm-12">
+        <div class="row my-4">
+            <div class="col-7">
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control group-search">
+                    <button class="btn-black ml-4">Axtar</button>
+                </form>
+            </div>
+            <div class="col-5 d-flex justify-content-end">
+                <button class="btn-black">Seçilmişləri sil</button>
+                <a class="btn-black ml-3 d-flex align-items-center" href="/add-group">Əlavə et</a>
+            </div>
+        </div>
+
+        <div class="row ">
+            <table class="w-100">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+                        </th>
+                        <th>
+                            Qrupun adı
+                        </th>
+                        <th>
+                            Tələbələrin sayı
+                        </th>
+                        <th>
+                            Sinif nümayəndəsi
+                        </th>
+                        <th>
+                            Tədris dili
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+
+                        </td>
+                        <td>
+                            AB-AC12
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Əli Vəliyev
+                        </td>
+                        <td>
+                            Azərbaycan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+
+                        </td>
+                        <td>
+                            AB-AC12
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Əli Vəliyev
+                        </td>
+                        <td>
+                            Azərbaycan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+
+                        </td>
+                        <td>
+                            AB-AC12
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Əli Vəliyev
+                        </td>
+                        <td>
+                            Azərbaycan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+
+                        </td>
+                        <td>
+                            AB-AC12
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Əli Vəliyev
+                        </td>
+                        <td>
+                            Azərbaycan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+
+                        </td>
+                        <td>
+                            AB-AC12
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Əli Vəliyev
+                        </td>
+                        <td>
+                            Azərbaycan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="action-toggle" style="display: inline-block;">
+
+                        </td>
+                        <td>
+                            AB-AC12
+                        </td>
+                        <td>
+                            22
+                        </td>
+                        <td>
+                            Əli Vəliyev
+                        </td>
+                        <td>
+                            Azərbaycan
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

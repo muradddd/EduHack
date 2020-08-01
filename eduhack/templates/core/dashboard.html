@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div
+                    class="card-body d-flex flex-column justify-content-center d-flex flex-column justify-content-center">
+                    <h5 class="card-title">Imtahanlar</h5>
+                    <p class="card-text">Imtahan nəticələri ilə bolüşmək / Imtahana nəzarətçi təyin etmək və s.</p>
+                    <a href="#"><img src="{{ url_for('static', filename='images/exam.png') }}" alt="exam_image"
+                            class="plus_image"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <a href="/groups">
+                <div class="card text-center">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title">Grupların idarə edilməsi</h5>
+                        <p class="card-text">Yeni qrup əlavə etmək / Tələbə əlavə etmək / Müəllim təyin etmək / imtahan
+                            vaxtını təyin etmək və s.</p>
+                        <img src="{{ url_for('static', filename='images/settings.png') }}" alt="settings_image"
+                            class="plus_image">
+            </a>
+        </div>
+    </div>
+    </a>
+</div>
+<div class="col-sm-4">
+    <div class="card text-center">
+        <div class="card-body d-flex flex-column justify-content-center">
+            <h5 class="card-title">Tələbələr</h5>
+            <p class="card-text">Yeni tələbə akkauntu yaratmaq / akkauntu silmək </p>
+            <a href="#"><img src="{{ url_for('static', filename='images/students.jpg') }}" alt="students_image"
+                    class="plus_image"></a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+        <div class="card text-center">
+            <div class="card-body d-flex flex-column justify-content-center ">
+                <h5 class="card-title">Elanlar</h5>
+                <p class="card-text">Yeni elan yaratmaq / Elan silmək / Elanda dəyişiklik etmək</p>
+                <a href="#"><img src="{{ url_for('static', filename='images/announcement.png') }}"
+                        alt="announcement_image" class="plus_image"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card text-center">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title">Cədvəl</h5>
+                <p class="card-text">Leksiya və seminarların cədvəlini qurmaq / İmtahanlarin cədvəlini qurmaq</p>
+                <a href="#"><img src="{{ url_for('static', filename='images/tables.png') }}" alt="table_image"
+                        class="plus_image"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
+</div>
+{% endblock %}
