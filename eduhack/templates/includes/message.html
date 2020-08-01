@@ -1,8 +1,9 @@
-{% for category, message in messages %}
-<div class="alert alert-{{category}}", role="alert">   <!--category-ni sen app.py da vereceksen/ Misal success(yasil), danger(qirmizi) ve.s-->
-{{ message }}
-</div>
-{% endfor %}
-</ul>
-{% endif %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{category}}", role="alert"> <!--category-ni sen execute.py da vereceksen/ Misal success(yasil), danger(qirmizi) ve.s-->
+    {{ message }}
+    </div>
+    {% endfor %}
+  {% endif %}
 {% endwith %}
