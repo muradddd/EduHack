@@ -6,6 +6,10 @@ core = Blueprint(__name__, 'core')
 def home():
     return render_template('core/index.html')
 
-@core.route('/teacher_main', methods=['GET','POST'])
+@core.route('/teacher/main', methods=['GET','POST'])
 def teacher_main():
     return render_template('core/teacher_main.html')
+
+@core.route('/teacher/lesson', methods=['GET','POST'])
+def teacher_main():
+    return render_template('core/teacher_lesson.html')
