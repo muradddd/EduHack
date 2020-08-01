@@ -7,5 +7,5 @@ def home():
     return render_template('core/index.html')
 
 @core.route('/teacher_main', methods=['GET','POST'])
-def home():
+def teacher_main():
     return render_template('core/teacher_main.html')
