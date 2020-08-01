@@ -1,7 +1,10 @@
+body {
+    font-family: 'EB Garamond', serif;
+}
 .name {
     color: white;
     margin-top: 10px;
-    margin-left: 50px;
+    /* margin-left: 60px; */
 }
 .control-btn {
     border: 1px solid #E6E6E6;
@@ -21,3 +24,17 @@
 .chat-text {
     display: none;
 }
+.abel {
+    display: none;
+}
+.cash {
+    display: none;
+}
+/* .btnn {
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+}
+.btn-place {
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+} */
