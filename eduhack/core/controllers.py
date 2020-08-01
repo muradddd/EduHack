@@ -11,7 +11,7 @@ def teacher_main():
     return render_template('core/teacher_main.html')
 
 @core.route('/teacher/lesson', methods=['GET','POST'])
-def teacher_main():
+def teacher_lesson():
     return render_template('core/teacher_lesson.html')
 
 @core.route('/dashboard', methods=['GET',])
