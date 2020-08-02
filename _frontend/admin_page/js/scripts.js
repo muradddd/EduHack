@@ -132,3 +132,4 @@ function render_remove_account() {
                 
     <div class="col-sm-4"></div>`;
 };
+
