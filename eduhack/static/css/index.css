@@ -1,15 +1,18 @@
 body {
-    background-image: url(cover.png);
+    background-image: url(../images/cover.png);
     font-family: 'EB Garamond', serif;
 }
+
 .header {
     color: white;
     font-size: 120px;
 }
+
 .header-part-two {
     color: white;
     font-size: 130px;
 }
+
 .enter-button {
     width: 200px;
     height: 70px;
@@ -24,6 +27,7 @@ body {
     transition-delay: 0s;
     transition: transform .5s ease;
 }
+
 .enter-button:hover {
     opacity: 1;
     transform: scale(1.03);

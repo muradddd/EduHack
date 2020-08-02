@@ -1,19 +1,22 @@
-
 .main {
     margin-top: 90px;
 }
-.header-container{
-    background-image: url("./cover.png");
+
+.header-container {
+    background-image: url("../images/cover.png");
 
 }
+
 .header {
     color: white;
     font-size: 110px;
 }
+
 .header-part-two {
     color: white;
     font-size: 120px;
 }
+
 .programs-card {
     color: black;
     background-color: white;
@@ -25,7 +28,7 @@
     justify-content: center;
     opacity: 0.9;
 
-    
+
     transition: opacity 0.2s ease-in;
     transition-property: opacity;
     transition-duration: 0.2s;
@@ -33,6 +36,7 @@
     transition-delay: 0s;
     transition: transform .5s ease;
 }
+
 .programs-card-two {
     color: white;
     background-color: #061A40;
@@ -50,6 +54,7 @@
     transition-delay: 0s;
     transition: transform .5s ease;
 }
+
 .programs-card-three {
     color: black;
     background-color: white;
@@ -67,49 +72,61 @@
     transition-delay: 0s;
     transition: transform .5s ease;
 }
+
 .programs-card:hover {
     opacity: 1;
     transform: scale(1.03);
 }
+
 .programs-card-two:hover {
     opacity: 1;
     transform: scale(1.03);
 }
+
 .programs-header {
     margin-left: 20px;
 }
+
 .time {
     font-size: 19px;
 }
+
 .t-time {
     font-size: 17px;
 }
+
 .task-time {
     padding-top: 35px;
     font-size: 19px;
 }
+
 .task-names {
     padding: 30px;
 }
-#s{
+
+#s {
     margin-left: 120px;
 }
-#ss{
+
+#ss {
     margin-left: 260px;
 }
-#sss{
+
+#sss {
     margin-left: 280px;
 }
-#ssss{
+
+#ssss {
     margin-left: 310px;
 }
 
 
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
+    .carousel-inner .carousel-item>div {
         display: none;
     }
-    .carousel-inner .carousel-item > div:first-child {
+
+    .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
 }
@@ -123,20 +140,19 @@
 
 /* display 3 */
 @media (min-width: 768px) {
-    
+
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(33.333%);
+        transform: translateX(33.333%);
     }
-    
-    .carousel-inner .carousel-item-left.active, 
+
+    .carousel-inner .carousel-item-left.active,
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.333%);
+        transform: translateX(-33.333%);
     }
 }
 
 .carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(0);
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
 }
-

@@ -8,7 +8,7 @@ from eduhack import db
 
 class LogInForm(FlaskForm):
     email = StringField('E-poçt', validators=[Length(5, 40), DataRequired()])
-    password = PasswordField('Şifrə', validators=[Length(min=8, max=40), DataRequired()])
+    password = PasswordField('Şifrə', validators=[Length(min=8, max=40)])
 
 
 class RegisterForm(FlaskForm):

@@ -31,3 +31,13 @@ def add_group():
 @core.route('/teacher/books', methods=['GET', 'POST',])
 def books():
     return render_template('core/books.html')
+
+
+@core.route('/student', methods=['GET', 'POST',])
+def student():
+    return render_template('core/student.html')
+
+
+@core.route('/call', methods=['GET', 'POST',])
+def call():
+    return render_template('core/call.html')

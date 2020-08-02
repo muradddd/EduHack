@@ -24,7 +24,9 @@
             <form action="" method="post">
                 {{form.csrf_token}}
                 <div class="form-group">
-                    {{form.email.label}}
+                    <!-- {{form.email.label}}
+                     -->
+                    <label for="">Username</label>
                     {{form.email(class_="form-control")}}
                     {% if form.email.errors %}
                     <li style="color:red;">{{ form.email.errors.0 }}</li>
