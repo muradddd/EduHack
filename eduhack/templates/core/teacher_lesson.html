@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %} Lesson  {% endblock %}
+{% block css %}
+  <link rel="stylesheet" href="{{url_for('static', filename='css/teacher_les.css') }}">
+
+{% endblock%}
+{% block content %}
+<div class="container">
+<section class="testimonial py-5" id="testimonial">
+    <div class="container">
+      <div class="col-md-12  main">
+         <div class="container">
+            <h4>Canlı Dərs Başlat</h4>
+            <hr class="bg-danger">
+             <div class="card-body">
+                
+                 <form method="post">
+                   <dl>
+                        <input class="form-group col-md-6" placeholder="Fənin adı" type="text">   
+                        <input class="form-group col-md-6" placeholder="Dərsin mövzusu" type="text">
+                        <input class="form-group col-md-6" placeholder="Tarix" type="date">
+                    </dl>
+                    <div class="container">
+                      <button type ="submit" class="btn btn-danger">Dərsə başla</button>
+                       
+                    </div>
+                  
+                  </form>
+                </div>
+              </div>                     
+          </div>
+        </div>
+    </section> 
+  </div>     
+
+{%endblock%}
