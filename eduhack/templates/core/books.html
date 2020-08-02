@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %} Books  {% endblock %}
+{% block css %}
+
+{% endblock%}
+{% block content %}
+<div class="container">
+        <div class="col-md-12">
+            <h3 class="text-primary text-center font-bold"> DƏRS VƏSAİTLƏRİ </h3>                   
+            <hr class="bg-primary">
+            <div class="col text-right">
+                <button class="btn btn-danger text-center"> Əlavə et </button>
+                <img src="../../static/images/plus.jpg" width="40" height="40">
+            </div>
+        </div>
+        <br>
+       
+        <div class="col-md-12">
+            <div class="row">
+                <h4  class="text-success font-bold">QRAFLAR NƏZƏRİYYƏSİ</h4>
+                <br>
+                <table class="table table-secondary">
+                    <tr >
+                        <th >
+                            <pre class="ml-8" >Qraflar Nəzəriyyəsi. Dərs vəsaiti. Müəlliflər: Ə.Ə.Hüseyinov, M.İ.Seyidov, </pre>
+                        </th>
+                        <th ><a href="/return-files/" target="_blank">  <button class="btn btn-success "> Yüklə </button></a></th>      <!--target="_blank" yeni sehifede demekdir-->
+                    </tr>
+                    <tr>
+                        <th><pre>Qraflar Nəzəriyyəsi. Slayd</pre>
+                    </th>   
+                        <th><a href="/return-files1/" target="_blank"> <button class="btn btn-success "> Yüklə </button></a></th>
+                    </tr>
+                    </table>
+                    <h4  class="text-success font-bold">Avtomatlaşdırılmış Konstruktiv Layihələndirmə sistemləri</h4>
+                    <br>
+                <table class="table table-secondary">
+                <tr>
+                    <th>
+                        <pre>İdarəetmə sistemlərinin Layihələndirilməsinin Aavtomatlaşdırılması 
+                        
+            Müəlliflər: F.H.Ələkbərli, U.X.Ağayev, M.S.Salmanov
+                        </pre> 
+                    </th>
+                    <th><a href='/index/pdf-file/' target="_blank">  <button class="btn btn-success "> Yüklə </button></a></pre></th>       <!--target="_blank" yeni sehifede demekdir-->
+                </tr>
+                <tr>
+                    <th> 
+                        <pre>Koonstruksiyaları Aavtomatik Layihələndirmə Sistemləri. Müəlliflər: X.M.Heydərov</pre>
+                    </th>
+                        <th> <a href='/index/pdf' target="_blank"> <button class="btn btn-success "> Yüklə </button> </a> </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock%}
