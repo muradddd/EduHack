@@ -2,14 +2,27 @@
 	width: 25px;
 	height: 25px;
 }
-.row{
-	margin-top: 15px;
-}
-
-.card{
+.manage_cards{
 	height: 150px;
 }
 
 .card-title, .card-text{
 	padding:5px;
+}
+
+.student{
+	width: 100px;
+	height: 100px;
+}
+.row{
+	margin-bottom: 10px;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+#reason{
+	height: 100px;
 }
