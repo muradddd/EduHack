@@ -27,3 +27,7 @@ def groups():
 @core.route('/add-group', methods=['GET', 'POST',])
 def add_group():
     return render_template('core/add-group.html')
+
+@core.route('/teacher/books', methods=['GET', 'POST',])
+def books():
+    return render_template('core/books.html')
