@@ -7,8 +7,8 @@ app = Flask(__name__, static_url_path='/static')
 
 BASE_DIRS = os.path.dirname(os.path.abspath(__file__))
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:////{BASE_DIRS}/foo.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:////{BASE_DIRS}/foo.db'
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
